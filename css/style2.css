@@ -1,0 +1,82 @@
+h1,h2,h3,h4,p,a{
+	font-family: 'Jua', sans-serif;
+}
+
+body{
+	background: url(../img/bg.png) center;
+}
+
+header{
+	background:  url(../img/mario.png) top;
+	text-align: center;
+}
+header nav{
+	padding: 2%;
+}
+header nav a{
+	color: brown;
+	background-color: lightgray;
+	padding: 1%;
+	margin: 1%;
+}
+
+main{
+	max-width: 1100px;
+	margin: 2% auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+aside {
+	display: block;
+	width: 15%;
+	
+	
+	background-color: red;
+}
+
+aside img{
+	width: 95%;
+	margin: 1% auto;
+}
+.center{
+	width: 65%;
+
+}
+
+button:after{
+	content: "";
+	float: none;
+}
+
+article img{
+	display: block;
+	float:left;
+	width: 20%;
+}
+
+footer{
+	margin: 1% auto;
+	text-align: center;
+}
+
+footer img{
+	width: 30%;
+	margin: 1% auto;
+}
+
+article{
+	width: 95%;
+	margin: 2% auto;
+	background-color: white;
+	min-height: 200px;
+}
+article h2{
+	color: blue;
+	background-color: gray;
+}
+
+article span{
+	color: red;
+}

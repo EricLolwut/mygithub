@@ -1,0 +1,69 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mon Blog</title>
+	<link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	
+	<script src="js/jquery-3.3.1.min.js"> </script>
+	<link rel="stylesheet" href="css/style2.css" type="text/css">
+</head>
+<body>
+
+<header>
+		<h1> (¯`·._.·xXx_ƎRIC_DŨ_13_xXx·._.·´¯) </h1>
+		<img src="img/headercon.gif"/>
+		<h2> Bienvenue sur mon blog </h2>
+			<nav>
+				<a href=#> <img src="img/home.gif"> Accueil </a>
+				<a href=#> <img src="img/beer.gif">  Bière gratos </a>
+				<a href=#> <img src="img/dollar.gif"> Me donner du pognon </a>
+				<a href="blog/admin/index.php"> <img src="img/computer.gif"> Se connecter à l'interwebz </a>
+			</nav>
+</header>
+
+<main class="flexcenter">
+
+	<aside class="lecotegauche">
+		<img src="img/pepepopcorn.gif">
+		<button> Ajouter un nouvel article </button>
+		<h2> Utilisateur: </h2>
+		<p> <strong> <?php echo $pseudo; ?> </strong> </p>
+		<p> En ligne depuis le <strong> 25 / 02 / 2004 </strong> </p>
+	</aside>
+
+	<section class="center">
+		<section>
+				<?php 
+				if($vue1 != '' && file_exists($vue1))
+					include($vue1);
+				else
+					echo 'Articles Introuvables';
+				?>
+
+		</section>
+	</section>
+
+	<aside class="pubsdemerde">
+		<img src="img/clickhere.gif">
+		<img src="img/pubvertical.gif">
+		<img src="img/waifu.png">
+	</aside>
+
+
+
+</main>
+
+<footer>
+
+	<img src="img/barre.png">
+
+</footer>
+
+
+</body>
+</html>
