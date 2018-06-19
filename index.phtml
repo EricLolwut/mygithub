@@ -2,6 +2,9 @@
 <?php foreach($resultarticles as $key => $value): ?>
     <article>
         <h2> <?= $value['titre'];?> </h2>
+        <h1> Ma grosse bite en plâtre </h1>
+        <h1> Comment on construit une fusée </h1>
+        <h1> truc random </h1>
         <?php if (($value['imageentete'] != NULL) || ($value['imageentete'] != "")): ?> 
         <img src=" <?= IMGARTICLE.$value['imageentete']?> "/>
    		<?php endif; ?>
